@@ -16,12 +16,10 @@ adv.remove();
 document.body.style.backgroundImage = "url(img/true.jpg)";
 title.innerHTML = 'Мы продаем только подлинную технику Apple';
 
-/*let question = prompt("Ваше отношение к технике Apple?", '');  
-prompT.innerHTML = question;*/
+let question = prompt("Ваше отношение к технике Apple?", '');  
+prompT.innerHTML = question;
 
-temp = menu[1];
-menu[1] = menu[2];
-menu[2] = temp; 
+
 
 
 
