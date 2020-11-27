@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
    // Timer
 
-   let deadLine = '2020-11-23';
+   let deadLine = '2021-11-23';
 
    function getTimeRemaining(endtime) {
        let t = Date.parse(endtime) - Date.parse(new Date()),
@@ -92,4 +92,24 @@ function addZero(num) {
      } 
     } 
 
+
+
+    // Modal
+
+    let more = document.querySelector('.more'),
+        overlay = document.querySelector('.overlay'),
+        close = document.querySelector('.popup-close');
+
+        more.addEventListener('click', function() {
+            overlay.style.display = 'block';
+            this.classList.add('more-splash');
+            document.body.style.overflow = 'hidden';
+        });
+
+        close.addEventListener('click', function() {
+            overlay.style.display = 'none';
+            more.classList.remove('more-splash');
+            more.classList.remove('more-splash');
+            
+        });
 });
