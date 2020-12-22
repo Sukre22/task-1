@@ -233,7 +233,7 @@ function addZero(num) {
                     personsSum = +this.value;
                     total = (daysSum + personsSum) * 4000;
 
-                    if(restDays.value == '') {
+                    if(restDays.value == '' || persons.value == '') {
                         totalValue.innerHTML = 0;
                     } else {
                         totalValue.innerHTML = total;
@@ -244,7 +244,7 @@ function addZero(num) {
                     daysSum = +this.value;
                     total = (daysSum + personsSum) * 4000;
 
-                    if(persons.value == '') {
+                    if(restDays.value == '' || persons.value == '') {
                         totalValue.innerHTML = 0;
                     } else {
                         totalValue.innerHTML = total;
