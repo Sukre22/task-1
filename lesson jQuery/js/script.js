@@ -16,14 +16,19 @@ $(document).ready(function() {
     });
       
     $('#1').on('click', function() {
-        $('.overlay').css('display', 'block');
-    });
-  
+
+        $('.overlay').slideDown('slow', function() {
+            $('.overlay').css('display', 'block');
+        });
+        
+    }); 
         
 
     
     $('.close').on('click', function() {
-        $('.overlay').css('display', 'none');
+        $('.overlay').slideUp('slow', function() {
+            $('.overlay').css('display', 'none');
+        });
     });
 
     
